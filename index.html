@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upitnik sa Checkboxovima</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 50%;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+        }
+        .question {
+            margin: 20px 0;
+        }
+        .question label {
+            display: block;
+            margin: 5px 0;
+        }
+        .submit-btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .submit-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Upitnik</h1>
+        <form>
+            <div class="question">
+                <p>1. Koje voće volite?</p>
+                <label><input type="checkbox" name="fruit" value="jabuka"> Jabuka</label>
+                <label><input type="checkbox" name="fruit" value="banana"> Banana</label>
+                <label><input type="checkbox" name="fruit" value="narandža"> Narandža</label>
+                <label><input type="checkbox" name="fruit" value="jagoda"> Jagoda</label>
+            </div>
+            <div class="question">
+                <p>2. Koje sportove pratite?</p>
+                <label><input type="checkbox" name="sport" value="fudbal"> Fudbal</label>
+                <label><input type="checkbox" name="sport" value="košarka"> Košarka</label>
+                <label><input type="checkbox" name="sport" value="tenis"> Tenis</label>
+                <label><input type="checkbox" name="sport" value="plivanje"> Plivanje</label>
+            </div>
+            <div class="question">
+                <p>3. Koje hobije imate?</p>
+                <label><input type="checkbox" name="hobby" value="čitanje"> Čitanje</label>
+                <label><input type="checkbox" name="hobby" value="putovanja"> Putovanja</label>
+                <label><input type="checkbox" name="hobby" value="kuvanje"> Kuvanje</label>
+                <label><input type="checkbox" name="hobby" value="sport"> Sport</label>
+            </div>
+            <button type="submit" class="submit-btn">Pošalji</button>
+        </form>
+    </div>
+</body>
+</html>
